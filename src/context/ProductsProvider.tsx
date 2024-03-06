@@ -5,7 +5,11 @@ export type ProductType = {
   name: string;
   price: number;
 };
+
+// use it in dev mode
 const initState: ProductType[] = [];
+
+// use it in production mode
 // const initState: ProductType[] = [
 //   {
 //     sku: "item0001",
@@ -39,6 +43,7 @@ export const ProductsProvider = ({ children }: ChildrenType): ReactElement => {
   useEffect(
     () => {
       // the return type is Promise<ProductType[]> because the fetch function returns a Promise
+      // use it in dev mode
       const fetchProducts = async (): Promise<ProductType[]> => {
         const data = await fetch("http://localhost:3500/products")
           .then((res) => {

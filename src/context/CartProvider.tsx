@@ -23,6 +23,7 @@ export type ReducerAction = {
   payload?: CartItemType;
 };
 
+// state mangement
 const reducer = (
   state: CartStateType,
   action: ReducerAction

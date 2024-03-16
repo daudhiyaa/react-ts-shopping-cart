@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React Typescript Beginner Project
 
-Currently, two official plugins are available:
+## How to Run
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.  Clone the Repository
 
-## Expanding the ESLint configuration
+    ```sh
+    git clone https://github.com/daudhiyaa/react-ts-shopping-cart.git
+    ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2.  Go to your project directory & Install Dependencies
 
-- Configure the top-level `parserOptions` property like this:
+    ```sh
+    cd react-ts-shopping-cart
+    yarn install
+    ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3.  Setup / Customize Data
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    You can go to `data/products.json` & `src/images` to customize your product data
+
+4.  Run JSON Server
+
+    ```sh
+    yarn json-server --watch data/products.json --port 3500
+    ```
+
+5.  Run the App
+
+    ```sh
+    yarn dev
+    ```
+
+## What will you learn?
+
+- Typescript implementation in React
+- Custom Hooks
+- Context & Provider
+- State Management using Reducer
+- Memoization
+
+## Credits
+
+- Dave Gray's Youtube Channel : [@DaveGrayTeachesCode](https://www.youtube.com/@DaveGrayTeachesCode)
+- React Typescript Project Tutorial | Shopping Cart - Part 1 : [Link](https://www.youtube.com/watch?v=HQFeTj0dGBo)
+- React Typescript Project Tutorial | Shopping Cart - Part 2 : [Link](https://www.youtube.com/watch?v=6Qqb2GBGgGc)

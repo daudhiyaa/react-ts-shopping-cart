@@ -6,10 +6,10 @@ export type ProductType = {
   price: number;
 };
 
-// use it in dev mode
+// ===== use it in dev mode =====
 const initState: ProductType[] = [];
 
-// use it in production mode
+// ===== use it in production mode =====
 // const initState: ProductType[] = [
 //   {
 //     sku: "item0001",
